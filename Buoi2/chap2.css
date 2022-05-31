@@ -1,0 +1,120 @@
+/* 
+  Tiền tố - prefix
+  m-*: margin
+  p-*: padding
+  bg-[color]: background
+*/
+:root {
+    --blue: #272f54;
+    --orange: #ca7801;
+  }
+  .container {
+    max-width: 980px;
+  }
+  .m-auto {
+    margin: auto;
+  }
+  /* ========== Background ========= */
+  .bg-blue {
+    background: var(--blue);
+  }
+  .bg-orange {
+    background: var(--orange);
+  }
+  /* ========== Aligment ========= */
+  .text-center {
+    text-align: center;
+  }
+  /* ========== Margin ========= */
+  .m-0 {
+    margin: 0;
+  }
+  /* ========== Padding ========= */
+  
+  .p-0 {
+    padding: 0;
+  }
+  .p-1 {
+    padding: 4px;
+  }
+  .px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .py-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  /* ========== Text color ========= */
+  .text-white {
+    color: #fff;
+  }
+  .text-blue {
+    color: var(--blue);
+  }
+  .text-orange {
+    color: var(--orange);
+  }
+  
+  /* ========== Display ========= */
+  .flex {
+    display: flex;
+  }
+  .justify-between {
+    justify-content: space-between;
+
+  }
+  
+  
+  .items-center {
+    align-items: center;
+  }
+  .grid {
+    display: grid;
+  }
+  .grid-cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-cols-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .gap-8 {
+    grid-gap: 32px;
+  }
+  .gap-40{
+      grid-gap: 160px;
+  }
+  /* ========== Underline ========= */
+  .no-underline {
+    text-decoration: none;
+  }
+  .list-unstyled {
+    list-style: none;
+  }
+  /* ========== Hover ========= */
+  .hover\:background.hover{
+      background-color: var(--blue);
+  }
+
+  
+    .box{
+      height: 400px;
+      background: yellow;
+    }
+  
+  @media(min-width: 768px){
+    .box{
+      background: green;
+    }
+  }
+  @media(min-width: 1280px){
+    .box{
+      background: red;
+    }
+  }
+  @media(min-width: 1366px){
+    .box{
+      background: black;
+    }
+  }
+
